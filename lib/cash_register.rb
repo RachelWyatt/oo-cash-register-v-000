@@ -10,6 +10,7 @@ class CashRegister
   end
 
   def self.add_item(title, price)
+    self.total + price
   end
 
   def apply_discount

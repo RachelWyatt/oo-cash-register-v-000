@@ -20,7 +20,7 @@ class CashRegister
     float_price = @price.to_f
     discount_float = @discount.to_f
     self.total = @price - (discount_float/100 * float_price)
-    self.total.to_i
+    self.total = self.total.to_i
   #  integer_total = self.total.to_i
     return "After the discount, the total comes to $#{self.total}."
   end

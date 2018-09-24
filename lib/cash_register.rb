@@ -1,7 +1,7 @@
 class CashRegister
   attr_accessor :total,
 
-  def self.total(total = 0)
+  def self.total(total, employee_discount)
     @total = total
   end
 

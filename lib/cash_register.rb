@@ -1,6 +1,10 @@
 class CashRegister
   attr_accessor :total,
 
+  def initialize(total, employee_discount)
+    @total = total
+  end
+
   def self.total(total, employee_discount)
     @total = total
   end

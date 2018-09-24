@@ -24,7 +24,7 @@ class CashRegister
     self.total = @price - ((discount_float/100) * (float_price)).to_i
     return "After the discount, the total comes to $#{self.total}."
   elsif @discount == 0
-    return "There is no discount to apply"
+    return "There is no discount to apply."
   end
 end
 

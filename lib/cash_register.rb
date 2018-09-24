@@ -1,6 +1,7 @@
-class CashRegister 
+class CashRegister
+  attr_accessor :total, 
 
-  def total(employee_discount = 0)
+  def total(total = 0)
   end
 
   def add_item(title, price)

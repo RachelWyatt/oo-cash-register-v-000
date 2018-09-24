@@ -2,6 +2,7 @@ class CashRegister
   attr_accessor :total, 
 
   def total(total = 0)
+    @total = total
   end
 
   def add_item(title, price)

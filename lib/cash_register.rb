@@ -18,7 +18,7 @@ class CashRegister
   end
 
   def apply_discount
-    if @discount != 0
+  if @discount != 0
     float_price = @price.to_f
     discount_float = @discount.to_f
     self.total = @price - ((discount_float/100) * (float_price)).to_i
@@ -26,6 +26,7 @@ class CashRegister
   elsif @discount == 0
     return "There is no discount to apply"
   end
+end
 
   def items
     @title
